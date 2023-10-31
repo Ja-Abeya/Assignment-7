@@ -1,0 +1,19 @@
+numbers = []  # Initialize an empty list to store integers
+
+while True:
+    user_input = input("Please enter an integer (or 'done' to finish): ")
+
+    if user_input == 'done':
+        print("Bye!")  # Display the "Bye!" message
+        break  # Exit the loop if the user enters 'done'
+    try:
+        number = int(user_input)  # Convert the input to an integer
+        numbers.append(number)  # Add the integer to the list
+        average = sum(numbers) / len(numbers)  # Calculate the average
+        print(f"[{', '.join(map(str, numbers))}], average = {average:.2f}")
+    except ValueError:
+        print("Invalid input. Please enter an integer or 'done'.")
+
+if numbers:
+    average = sum(numbers) / len(numbers)
+    print(f"Final average: {average:.2f}")
