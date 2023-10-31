@@ -1,0 +1,29 @@
+def chop(a_list):
+    if len(a_list) >= 2:
+        a_list.pop(0)  # Remove the first element
+        a_list.pop(-1)  # Remove the last element
+    else:
+        a_list.clear()  # If there are fewer than 2 elements, clear the list
+
+def middle(a_list):
+    if len(a_list) >= 2:
+        return a_list[1:-1]  # Return a new list containing all elements except the first and last
+    else:
+        return []
+
+# Program to call the functions
+my_list = [1, 2, 3, 4]
+print("my list before call chop function =>", my_list)
+
+# Call the chop function to modify the original list
+chop(my_list)
+print("my list after call chop function =>", my_list)
+
+# Restore the original list
+my_list = [1, 2, 3, 4]
+print("\nmy list before call middle function =>", my_list)
+
+# Create a new list by calling the middle function
+new_list = middle(my_list)
+print("my list after call middle function =>", my_list)
+print("new list after call middle function =>", new_list)
