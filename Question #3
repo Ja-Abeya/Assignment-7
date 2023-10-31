@@ -1,0 +1,21 @@
+# Initialize a variable to count the number of rows
+count = 0
+
+# Open the "mbox.txt" file for reading
+try:
+    with open("mbox.txt", "r") as file:
+        for line in file:
+            if line.startswith("From "):  # Note the space after "From"
+                sender_line = line.split()
+                if len(sender_line) > 1:
+                    sender_email = sender_line[1]
+                    print(sender_email)
+                    count += 1
+
+    # Print the total number of senders found
+    print(f"Total {count} lines were printed.")
+
+except FileNotFoundError:
+    print("Error: The 'mbox.txt' file does not exist.")
+except Exception as e:
+    print(f"An error occurred: {e}")
