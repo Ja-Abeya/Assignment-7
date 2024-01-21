@@ -19,7 +19,7 @@ print("my list before call chop function =>", my_list)
 chop(my_list)
 print("my list after call chop function =>", my_list)
 
-# Restore the original list
+# Restore the original list 
 my_list = [1, 2, 3, 4]
 print("\nmy list before call middle function =>", my_list)
 
