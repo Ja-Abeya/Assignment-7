@@ -1,4 +1,4 @@
-def chop(a_list):
+def chop(a_list): 
     if len(a_list) >= 2:
         a_list.pop(0)  # Remove the first element
         a_list.pop(-1)  # Remove the last element
