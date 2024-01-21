@@ -15,7 +15,7 @@ def middle(a_list):
 my_list = [1, 2, 3, 4]
 print("my list before call chop function =>", my_list)
 
-# Call the chop function to modify the original list
+# Call the chop function to modify the original list 
 chop(my_list)
 print("my list after call chop function =>", my_list)
 
