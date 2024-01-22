@@ -3,7 +3,7 @@ numbers = []  # Initialize an empty list to store integers
 while True:
     user_input = input("Please enter an integer (or 'done' to finish): ")
 
-    if user_input == 'done':
+    if user_input == 'done': 
         print("Bye!")  # Display the "Bye!" message
         break  # Exit the loop if the user enters 'done'
     try:
