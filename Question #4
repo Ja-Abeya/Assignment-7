@@ -14,6 +14,6 @@ while True:
     except ValueError:
         print("Invalid input. Please enter an integer or 'done'.")
 
-if numbers:
+if numbers: 
     average = sum(numbers) / len(numbers)
     print(f"Final average: {average:.2f}")
