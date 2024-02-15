@@ -27,3 +27,4 @@ except FileNotFoundError:
     print("Error: The 'romeo.txt' file does not exist.")
 except Exception as e:
     print(f"An error occurred: {e}")
+
